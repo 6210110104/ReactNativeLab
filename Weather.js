@@ -1,15 +1,8 @@
-import React, { useState } from 'react';
-import { Text } from 'react-native';
-import Forecast from './Forecast';
+import React from 'react'
+import { Text } from 'react-native'
 
 export default function Weather(props) {
-    const [forecastInfo, setForecastInfo] = useState({
-        main: '-',
-        description: '-',
-        temp: 0
-    })
-    return (
-       <Forecast {...forecastInfo}/>
+    return(
+        <Text>{props.zipCode}</Text>
     )
-   }
-   
+}
